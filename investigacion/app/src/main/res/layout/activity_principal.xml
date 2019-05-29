@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edInUs"
+        android:layout_alignEnd="@+id/textView3"
+        android:text="Usuario"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/edInCon"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <EditText
+        android:id="@+id/edInCon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="197dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:password="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edInCon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:text="Contraseña"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/edInUs"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="236dp" />
+
+    <EditText
+        android:id="@+id/edInUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="177dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="232dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="Inicio de sesion"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="88dp"
+        android:onClick="Iniciar"
+        android:text="Ingresar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button2"
+        android:layout_toEndOf="@+id/button2"
+        android:text="Registrar"
+        android:onClick="Registrar"
+        />
+</RelativeLayout>

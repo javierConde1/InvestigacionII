@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="privilegios">
+        <item value ="cliente">Cliente</item>
+        <item value ="proveedor">Proveedor</item>
+    </string-array>
+</resources>
